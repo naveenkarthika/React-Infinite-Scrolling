@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+}
+
+.photo {
+  display: flex;
+  border: 2px solid rgb(217, 210, 210);
+  width: 100%;
+  max-width: 800px;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 5px;
+  animation: scale 0.5 linear;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0.5);
+  }
+}
+
+.photo img {
+  width: 100%;
+  display: block;
+  max-width: 150px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo p {
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.photo span {
+  color: rgb(195, 138, 45);
+  margin: 0 10px;
+}
